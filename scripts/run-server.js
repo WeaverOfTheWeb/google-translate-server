@@ -12,9 +12,9 @@ function startServer() {
 	
 	// CORS
 	var allowCrossDomain = function(req, res, next) {
-		res.header('Access-Control-Allow-Origin', 'https://mememachine.pw');
+		res.header('Access-Control-Allow-Origin', 'https://mememachine.pw/ai-man/');
 		res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
-		res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+		res.header('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 
 		// intercept OPTIONS method
 		if ('OPTIONS' == req.method) {
