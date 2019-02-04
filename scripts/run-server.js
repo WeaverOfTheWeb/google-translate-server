@@ -23,12 +23,8 @@ function startServer() {
 			next();
 		}
 	};
-	app.use(allowCrossDomain);
+	app.use(allowCrossDomain)
 	
-	//var jsonParser = bodyParser.json();
-	//app.use(bodyParser.json());
-	
-	//	TODO: use express...
 	app.get('/', requestHandler);
 	app.get('/robots.txt', requestHandler);
 	app.get('/api/*', requestHandler);
